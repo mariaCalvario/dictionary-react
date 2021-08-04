@@ -38,12 +38,19 @@ export default function Dictionary(props) {
       <div className="Dictionary">
         <section>
           <form onSubmit={handleSubmit}>
-            <input
-              type="search"
-              placeholder="Type here the word you are looking for..."
-              onChange={changeKeyword}
-              defaultValue={props.defaultKeyword}
-            />
+            <div className="row">
+              <div className="col-10">
+                <input
+                  type="search"
+                  placeholder="Type here the word you are looking for..."
+                  onChange={changeKeyword}
+                  defaultValue={props.defaultKeyword}
+                />
+              </div>
+              <div className="col-2">
+                <input type="submit" value="Search" />
+              </div>
+            </div>
           </form>
         </section>
         <Results results={results} />
