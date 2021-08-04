@@ -42,7 +42,7 @@ export default function Dictionary(props) {
               <div className="col-10 col-md-6">
                 <input
                   type="search"
-                  placeholder="Type here the word you are looking for..."
+                  placeholder="Type your word here..."
                   onChange={changeKeyword}
                   defaultValue={props.defaultKeyword}
                 />
