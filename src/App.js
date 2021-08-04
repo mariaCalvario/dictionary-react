@@ -9,7 +9,19 @@ export default function App() {
         <header className="App-header">Dictionary</header>
         <Dictionary defaultKeyword="curiosity" />
         <footer className="App-footer">
-          <small>Coded by Maria Calvário</small>
+          <small>
+            <a
+              href="https://github.com/mariaCalvario/dictionary-react"
+              alt="GitHub repository"
+              title="GitHub repository"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-link"
+            >
+              Open-source code
+            </a>{" "}
+            by Maria Calvário
+          </small>
         </footer>
       </div>
     </div>
