@@ -23,13 +23,13 @@ export default function Dictionary(props) {
     //documentation: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleDictionaryResponse);
-  }
 
-  let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
-  const pexelsApiKey =
-    "563492ad6f917000010000010531d512c51b474e94b9c587126b98fa";
-  const headers = { Authorization: `Bearer ${pexelsApiKey}` };
-  axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
+    const pexelsApiKey =
+      "563492ad6f917000010000010531d512c51b474e94b9c587126b98fa";
+    const headers = { Authorization: `Bearer ${pexelsApiKey}` };
+    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
+  }
 
   function handleSubmit(event) {
     event.preventDefault();
